@@ -64,11 +64,11 @@ export default function PlanetDetail(props) {
                 <div className="text-center grid grid-cols-3 w-2/3 mx-auto gap-y-10 pt-4">
                     <div>
                         <h3>Diameter</h3>
-                        <p>{planets[index].diameter} km</p>
+                        <p>{planets[index].diameter.replace(/\B(?=(\d{3})+(?!\d))/g, ",")} km</p>
                     </div>
                     <div>
                         <h3>Population</h3>
-                        <p>{planets[index].population}</p>
+                        <p>{planets[index].population.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                     </div>
                     <div>
                         <h3>Surface Water</h3>

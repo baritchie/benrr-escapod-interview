@@ -9,11 +9,17 @@
     h3 {
         @apply text-xl;
     }
+    a {
+        @apply transition-all duration-200 decoration-transparent;
+    }
+    a:hover {
+        @apply underline decoration-custYellow text-custYellow font-bold;
+    }
 }
 @tailwind components;
 @layer components {
     .nav-item {
-        @apply tracking-wider block py-3 px-6 text-custYellow text-2xl font-restore font-black transition-all hover:scale-110 hover:duration-150;
+        @apply tracking-wider block py-3 px-6 text-custYellow text-2xl font-restore font-black transition-all hover:scale-110 hover:duration-150 hover:font-black;
     }
 }
 @tailwind utilities;
