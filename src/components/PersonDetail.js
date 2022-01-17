@@ -37,10 +37,6 @@ export default function PersonDetail(props) {
         }
     }, [people, url])
     function render() {
-        if (!isLoading || isLoading) {
-            setTimeout(() => {
-            }, 1000)
-        }
         if (isLoading && homeworld === "") {
             return (
                 <>
