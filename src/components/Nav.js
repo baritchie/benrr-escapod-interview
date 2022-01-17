@@ -4,7 +4,7 @@ import {
 export default function Nav() {
   return(
       <nav className="bg-nav bg-repeat bg-contain h-48 pt-4">
-        <ul className="flex gap-x-10 justify-center py-10">
+        <ul className="flex md:gap-x-10 justify-center py-10 flex-wrap">
           <li>
             <Link to="/" className="nav-item">Home</Link>
           </li>

@@ -62,7 +62,7 @@ function App() {
     }, [])
 
     return (
-        <div className="wrapper bg-black min-h-screen text-white pb-20">
+        <div className="bg-black min-h-screen text-white pb-20">
             <Nav />
             <Routes>
                 <Route path="/" element={<Homepage />} />

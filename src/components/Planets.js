@@ -33,7 +33,7 @@ export default function People(props) {
             setRenderPlanets(
                 currentPlanets.map((planet, index) => {
                     return (
-                        <div key={index} className="flex flex-wrap basis-1/4 justify-center py-4">
+                        <div key={index} className="flex flex-wrap basis-1/2 md:basis-1/4 justify-center py-4">
                             <h3>
                                 <Link 
                                     to={`/planets/${planet.name.replace(/\W+/g, '-').toLowerCase()}`}
@@ -69,8 +69,8 @@ export default function People(props) {
                     <section className="flex flex-wrap justify-center">
                         {renderPlanets}
                     </section>
-                    <section className="flex justify-center mt-10">
-                        <ul className="inline-flex flex-wrap">
+                    <section className="mt-10">
+                        <ul className="flex flex-wrap justify-around md:justify-center">
                             {renderPageNumbers}
                         </ul>
                     </section>

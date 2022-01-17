@@ -33,7 +33,7 @@ export default function People(props) {
             setRenderPeople(
                 currentPeople.map((person, index) => {
                     return (
-                        <div key={index} className="flex flex-wrap basis-1/4 justify-center py-4">
+                        <div key={index} className="flex flex-wrap basis-1/2 md:basis-1/4 justify-center py-4">
                             <h3>
                                 <Link 
                                     to={`/people/${person.name.replace(/\W+/g, '-').toLowerCase()}`}
@@ -65,12 +65,12 @@ export default function People(props) {
             return (
                 <>
                 <h1 className="mb-10">People of the Star Wars Universe</h1>
-                <main className="w-3/4 mx-auto">
+                <main className="w-11/12 md:w-3/4 mx-auto">
                     <section className="flex flex-wrap justify-center">
                         {renderPeople}
                     </section>
-                    <section className="flex justify-center mt-10">
-                        <ul className="inline-flex flex-wrap">
+                    <section className="mt-10">
+                        <ul className="flex flex-wrap justify-around md:justify-center">
                             {renderPageNumbers}
                         </ul>
                     </section>
