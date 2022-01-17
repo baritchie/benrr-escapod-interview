@@ -17,10 +17,10 @@ function App() {
     const [allPeople, setAllPeople] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     useEffect(() => {
-        let finalResult = []
         const fetchPlanets = async () => {
             const baseUrl = `https://swapi.dev/api/planets/?page=`
             let page = 1
+            let finalResult = []
             do {
                 try {
                     const response = await fetch(`${baseUrl}${page}`)
