@@ -21,5 +21,8 @@
     .nav-item {
         @apply tracking-wider block py-3 px-6 text-custYellow text-2xl font-restore font-black transition-all hover:scale-110 hover:duration-150 hover:font-black;
     }
+    .pagination-item {
+        @apply px-5 mx-2 text-xl font-semibold font-restore text-custYellow transition-all duration-200 decoration-transparent hover:underline hover:decoration-custYellow hover:cursor-pointer;
+    }
 }
 @tailwind utilities;

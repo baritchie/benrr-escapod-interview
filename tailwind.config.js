@@ -17,6 +17,9 @@ module.exports = {
           fontFamily: {
               openSans: "'Open Sans', sans-serif",
               restore: "'restore', sans-serif"
+          },
+          boxShadow: {
+              home: "0px 0px 10px 2px #FFF"
           }
       },
     },
